@@ -77,7 +77,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-gray-300 mt-4">
-              Esteem spirit temper too say adieus who direct esteem esteems luckily.
+              Esteem and spirit often lead one to say farewell to those who genuinely deserve admiration.
             </p>
           </div>
         </div>
