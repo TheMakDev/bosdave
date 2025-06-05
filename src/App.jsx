@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
+import Preloader from './Component/Preloader'; // Import Preloader
 
 // Lazy-loaded pages
 const Home = lazy(() => import('./Pages/Home'));
@@ -16,11 +17,11 @@ const App = () => {
 
   return (
     <div>
-      <div className='mb-20'>
+      <div className="mb-20">
         <Navbar />
       </div>
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Routes>
           <Route path="/" element={<Home key={location.key} />} />
           <Route path="/about" element={<About key={location.key} />} />
