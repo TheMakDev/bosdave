@@ -15,10 +15,8 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row items-center justify-between border-b border-gray-600 pb-8 mb-8 space-y-6 md:space-y-0">
           <div className="flex items-center space-x-3 text-2xl font-bold">
-            <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center">
-              <span className="text-white text-lg">C</span>
-            </div>
-            <span>Constructo</span>
+            
+            <span>Bosdave</span>
           </div>
           <button className="flex items-center border border-white px-6 py-3 rounded text-sm hover:bg-white hover:text-black transition">
             <FaDownload className="mr-2 w-5 h-5" />
