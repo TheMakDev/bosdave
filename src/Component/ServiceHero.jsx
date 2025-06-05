@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from '../assets/bridge.jpg';
+import bg from '../assets/img4.jpg';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -38,7 +38,7 @@ const ServicesHero = () => {
             transition={{ duration: 0.4 }}
             className="text-white font-bold text-2xl sm:text-4xl lg:text-5xl leading-snug"
           >
-            About Us
+            Our Service
           </motion.h1>
 
           <motion.p

@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from '../assets/bridge.jpg';
+import bg from '../assets/img2.jpg';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
