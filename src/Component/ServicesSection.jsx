@@ -2,37 +2,31 @@ import React, { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronRight, ChevronLeft } from 'lucide-react'
 
-import maintenance from '../assets/bg.jpg'
-import building from '../assets/bg2.jpg'
-import bridge from '../assets/bridge.jpg'
-import plumbing from '../assets/bg2.jpg'
-import roofing from '../assets/bg.jpg'
+import maintenance from '../assets/img1.jpg'
+import building from '../assets/img2.jpg'
+import bridge from '../assets/img3.jpg'
+import plumbing from '../assets/img4.jpg'
 
 const services = [
   {
-    title: 'Maintenance & Repair',
-    desc: 'There are many variations of passages of lorem Ipsum available.',
+    title: 'SUPPLY OF FURNITURE',
+    desc: 'At BOSDAVE ENGINEERING COMPANY LIMITED, our Procurement Unit reliably meets national supply demands, specializing in efficient furniture supply and delivery with a single point of contact and full accountability.',
     image: maintenance,
   },
   {
-    title: 'Building Construction',
-    desc: 'There are many variations of passages of lorem Ipsum available.',
+    title: 'SUPPLY OF OFFICE INTERIORS',
+    desc: 'BOSDAVE ENGINEERING COMPANY LIMITED delivers complete office interior solutions, from furniture supply to full installations, creating functional and stylish workspaces with trusted quality.',
     image: building,
   },
   {
-    title: 'Bridge & Road Construction',
-    desc: 'There are many variations of passages of lorem Ipsum available.',
+    title: 'COMPUTER/ STATIONERY SUPPLIES',
+    desc: 'BOSDAVE ENGINEERING COMPANY LIMITED supplies a wide range of quality IT products, including hardware, peripherals, and consumables from top brands like HP, Canon, Epson, and Xerox, along with essential office stationery.',
     image: bridge,
   },
   {
-    title: 'Plumbing Services',
-    desc: 'Professional plumbing solutions for homes and industries.',
+    title: 'SOLAR WATER PUMPING SYSTEMS',
+    desc: 'Solar water pumping systems provide a cost-effective, eco-friendly solution, reducing fuel costs by using photovoltaic technology. Ideal for rural, agricultural, mobile, and recreational uses, they offer reliable water access with minimal environmental impact.',
     image: plumbing,
-  },
-  {
-    title: 'Roofing & Tiling',
-    desc: 'Reliable and durable roofing and tiling services.',
-    image: roofing,
   },
 ]
 
@@ -50,7 +44,7 @@ const ServiceCard = ({ service, index }) => {
       onFocus={() => setIsFocused(true)}
       onBlur={() => setIsFocused(false)}
       whileHover={{ scale: 1.03 }}
-      className="snap-start flex-shrink-0 w-[85%] sm:w-[45%] md:w-[30%] lg:w-[28%] bg-white rounded-xl overflow-hidden shadow border border-gray-200 transition hover:shadow-lg outline-none"
+      className="snap-start flex-shrink-0 w-[85%] sm:w-[45%] md:w-[30%] lg:w-[28%] mx-auto bg-white rounded-xl overflow-hidden shadow border border-gray-200 transition hover:shadow-lg outline-none"
     >
       <img
         src={service.image}
@@ -95,7 +89,7 @@ const ServicesSection = () => {
         Our Services
       </h2>
 
-      {/* Scroll Buttons (visible only on md and above) */}
+      {/* Scroll Buttons (md and up) */}
       <div className="hidden md:block">
         <button
           onClick={() => scroll('left')}
@@ -114,10 +108,10 @@ const ServicesSection = () => {
         </button>
       </div>
 
-      {/* Scrollable Card Slider */}
+      {/* Scrollable Card List */}
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar"
+        className="flex justify-center sm:justify-start gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar"
       >
         {services.map((service, index) => (
           <ServiceCard key={index} service={service} index={index} />

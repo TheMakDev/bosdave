@@ -6,21 +6,21 @@ import { motion } from 'framer-motion';
 
 const AboutHero = () => {
   const cards = [
-    {
-      title: "Mail Us 24/7",
-      lines: ["pbminfotech@gmail.com", "support@pbminfotech.com"],
-      icon: <FaEnvelope className="text-[#f7931e] w-5 h-5" />,
-    },
-    {
-      title: "Our Location",
-      lines: ["85 Preston, Inglewood, Maine 983", "80, Hoofddorp Noord- 2132"],
-      icon: <FaMapMarkerAlt className="text-[#f7931e] w-5 h-5" />,
-    },
-    {
-      title: "Call Us 24/7",
-      lines: ["Phone: +001 236-895-4732", "Mobile: +9123 895-4732-236"],
-      icon: <FaPhone className="text-[#f7931e] w-5 h-5" />,
-    },
+   {
+         title: "Mail Us 24/7",
+         lines: ["inf@bosdave.com", "support@bosdave.com"],
+         icon: <FaEnvelope className="text-[#f7931e] w-5 h-5" />
+       },
+       {
+         title: "Our Location",
+         lines: ["Z 1, Jos Road By Abeokuta Street.", "No. 12 Block A 3rd Floor, City Plaza"],
+         icon: <FaMapMarkerAlt className="text-[#f7931e] w-5 h-5" />
+       },
+       {
+         title: "Call US 24/7",
+         lines: ["Phone: +234-8023550550", "Mobile: +234-8034922659"],
+         icon: <FaPhone className="text-[#f7931e] w-5 h-5" />
+       },
   ];
 
   return (
@@ -49,7 +49,7 @@ const AboutHero = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="text-white max-w-2xl font-normal text-sm sm:text-base md:text-lg mt-3 sm:mt-4"
           >
-            Contact our team through any of the channels below. We’re here to help you with your construction needs.
+            We are a team of professionals dedicated to delivering top-quality services
           </motion.p>
         </div>
       </div>

@@ -9,7 +9,7 @@ import img4 from '../assets/img4.jpg';
 export const services = [
   {
     title: "SUPPLY OF FURNITURE",
-    description: "EAt BOSDAVE ENGINEERING COMPANY LIMITED, our Procurement Unit has consistently risen to meet the demands of national supply needs. We specialize in delivering efficient, reliable furniture supply and delivery solutions offering our clients the convenience of a single point of contact and full accountability throughout the process",
+    description: "At BOSDAVE ENGINEERING COMPANY LIMITED, our Procurement Unit has consistently risen to meet the demands of national supply needs. We specialize in delivering efficient, reliable furniture supply and delivery solutions offering our clients the convenience of a single point of contact and full accountability throughout the process",
     icon: <FaTools size={24} className="text-blue-600" />,
     image: img1,
   },

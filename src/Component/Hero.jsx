@@ -49,15 +49,18 @@ const Hero = () => {
         {[
           {
             icon: <FaPencilRuler className="text-orange-500 text-4xl mx-auto mb-3" />,
-            title: "Creative Plan & Design",
+            title: "FINANCIAL CAPABILITY",
+            description: "We are fully committed to executing awarded projects and sourcing necessary funds for key contractual obligations. We consistently meet our clients’ needs, regardless of size, scope, or location, with the resources and capacity to handle all demands"
           },
           {
             icon: <FaHardHat className="text-orange-500 text-4xl mx-auto mb-3" />,
-            title: "Talented Peoples",
+            title: "TEAM EFFORT",
+            description: "We see the entire site as a community and use a team approach to identify safety and quality issues, developing proactive solutions. All site personnel, including subcontractors, are certified professionals committed to maintaining high safety standards. We foster a strong culture of hard work and collaboration."
           },
           {
             icon: <FaTools className="text-orange-500 text-4xl mx-auto mb-3" />,
-            title: "Modern Tools",
+            title: "OUR AFFORDABILITY",
+            description:"Though clients often expect us to be expensive due to our high standards, we surprise them with our down-to-earth pricing. We use the best skilled teams and equipment but ensure our services remain affordable and accessible to all customers."
           },
         ].map((item, i) => (
           <motion.div
@@ -69,8 +72,7 @@ const Hero = () => {
             {item.icon}
             <h3 className="text-base font-semibold mb-2">{item.title}</h3>
             <p className="text-gray-600 text-sm">
-              There are many variations of passages of lorem Ipsum available,
-              but the majority have suffered alteration.
+              {item.description}
             </p>
           </motion.div>
         ))}
