@@ -1,12 +1,12 @@
 import {
-  FaFacebookF,
-  FaTwitter,
+  FaFacebookF,FaTwitter,
   FaInstagram,
   FaPinterestP,
   FaYoutube,
   FaDownload,
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -14,9 +14,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
 
         <div className="flex flex-col md:flex-row items-center justify-between border-b border-gray-600 pb-8 mb-8 space-y-6 md:space-y-0">
-          <div className="flex items-center space-x-3 text-2xl font-bold">
-            <span>Bosdave</span>
-          </div>
+          <Link to="/" className="flex items-center shrink-0">
+                    <img
+                      src={logo}
+                      alt="Logo"
+                      className="h-10 sm:h-12 w-auto object-contain"
+                    />
+                  </Link>
           <button className="flex items-center border border-white px-6 py-3 rounded text-sm hover:bg-white hover:text-black transition">
             <FaDownload className="mr-2 w-5 h-5" />
             DOWNLOAD BROCHURE
