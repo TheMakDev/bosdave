@@ -9,22 +9,22 @@ const ContactBox = () => {
     {
       title: "Mail Us 24/7",
       lines: ["inf@bosdave.com", "support@bosdave.com"],
-      icon: <FaEnvelope className="text-[#f7931e] w-5 h-5" />
+      icon: <FaEnvelope className="text-red-600 w-5 h-5" />
     },
     {
       title: "Our Location",
       lines: ["Z 1, Jos Road By Abeokuta Street.", "No. 12 Block A 3rd Floor, City Plaza"],
-      icon: <FaMapMarkerAlt className="text-[#f7931e] w-5 h-5" />
+      icon: <FaMapMarkerAlt className="text-red-600 w-5 h-5" />
     },
     {
       title: "Call US 24/7",
       lines: ["Phone: +234-8023550550", "Mobile: +234-8034922659"],
-      icon: <FaPhone className="text-[#f7931e] w-5 h-5" />
+      icon: <FaPhone className="text-red-600 w-5 h-5" />
     },
     {
       title: "Working Days",
       lines: ["Mon to Fri - 09:00am To 06:00pm", "Saturday to Sunday - Closed"],
-      icon: <FaRegCalendarAlt className="text-[#f7931e] w-5 h-5" />
+      icon: <FaRegCalendarAlt className="text-red-600 w-5 h-5" />
     }
   ];
 
@@ -41,7 +41,7 @@ const ContactBox = () => {
         <div className="absolute inset-0 bg-black/50 z-0" />
         <div className="relative z-10 px-4 sm:px-8 md:px-16 py-16">
           <h1 className="text-white font-bold text-4xl sm:text-6xl lg:text-7xl text-center">
-            Contact Us
+            Contact <span className='text-red-600'>Us</span>
           </h1>
         </div>
       </motion.div>
@@ -54,7 +54,7 @@ const ContactBox = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 + idx * 0.1 }}
-            className="relative bg-white rounded-[2rem] p-5 shadow-md h-[220px] flex flex-col justify-between border-1 border-[#f7931e]"
+            className="relative bg-white rounded-[2rem] p-5 shadow-md h-[220px] flex flex-col justify-between border-1 border-red-600"
           >
             <div>
               <h2 className="text-2xl font-bold text-[#232755] mb-2">{card.title}</h2>

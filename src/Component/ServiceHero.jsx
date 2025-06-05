@@ -6,17 +6,17 @@ import { motion } from 'framer-motion';
 const ServicesHero = () => {
   const features = [
     {
-      icon: <FaEnvelope className="text-[#f7931e] text-4xl mx-auto mb-3" />,
+      icon: <FaEnvelope className="text-red-600 text-4xl mx-auto mb-3" />,
       title: "Mail Us 24/7",
       description: "Get in touch anytime with our dedicated email support.",
     },
     {
-      icon: <FaMapMarkerAlt className="text-[#f7931e] text-4xl mx-auto mb-3" />,
+      icon: <FaMapMarkerAlt className="text-red-600 text-4xl mx-auto mb-3" />,
       title: "Our Location",
       description: "Visit us at our conveniently located offices worldwide.",
     },
     {
-      icon: <FaPhone className="text-[#f7931e] text-4xl mx-auto mb-3" />,
+      icon: <FaPhone className="text-red-600 text-4xl mx-auto mb-3" />,
       title: "Call Us 24/7",
       description: "We are available by phone around the clock to assist you.",
     },
@@ -38,7 +38,7 @@ const ServicesHero = () => {
             transition={{ duration: 0.4 }}
             className="text-white font-bold text-2xl sm:text-4xl lg:text-5xl leading-snug"
           >
-            Our Service
+            Our <span className='text-red-600'>Service</span>
           </motion.h1>
 
           <motion.p
@@ -47,7 +47,7 @@ const ServicesHero = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="text-white max-w-3xl font-normal text-sm sm:text-base md:text-lg mt-3 sm:mt-4"
           >
-            Contact our team through any of the channels below. We’re here to help you with your construction needs.
+            We are a team of professionals dedicated to delivering top quality service.
           </motion.p>
         </div>
       </div>

@@ -55,7 +55,7 @@ const ServiceCard = ({ service, index }) => {
       <div className="p-5">
         <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
         <p className="text-sm text-gray-600 mb-4">{service.desc}</p>
-        <button className="text-orange-500 font-medium inline-flex items-center group hover:text-orange-600 transition">
+        <button className="text-red-500 font-medium inline-flex items-center group hover:text-red-600 transition">
           More
           <ChevronRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>
@@ -86,7 +86,7 @@ const ServicesSection = () => {
       className="py-20 px-4 sm:px-6 md:px-12 lg:px-20 bg-white relative"
     >
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-14">
-        Our Services
+        Our <span className='text-red-600'>Services</span>
       </h2>
 
       {/* Scroll Buttons (md and up) */}

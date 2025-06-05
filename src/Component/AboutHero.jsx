@@ -9,17 +9,17 @@ const AboutHero = () => {
    {
          title: "Mail Us 24/7",
          lines: ["inf@bosdave.com", "support@bosdave.com"],
-         icon: <FaEnvelope className="text-[#f7931e] w-5 h-5" />
+         icon: <FaEnvelope className="text-red-600 w-5 h-5" />
        },
        {
          title: "Our Location",
          lines: ["Z 1, Jos Road By Abeokuta Street.", "No. 12 Block A 3rd Floor, City Plaza"],
-         icon: <FaMapMarkerAlt className="text-[#f7931e] w-5 h-5" />
+         icon: <FaMapMarkerAlt className="text-red-600 w-5 h-5" />
        },
        {
          title: "Call US 24/7",
          lines: ["Phone: +234-8023550550", "Mobile: +234-8034922659"],
-         icon: <FaPhone className="text-[#f7931e] w-5 h-5" />
+         icon: <FaPhone className="text-red-600 w-5 h-5" />
        },
   ];
 
@@ -39,7 +39,7 @@ const AboutHero = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="text-white font-bold text-2xl sm:text-4xl lg:text-5xl leading-snug"
           >
-            About Us
+            About <span className='text-red-600'>Us</span>
           </motion.h1>
 
           <motion.p
@@ -63,7 +63,7 @@ const AboutHero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: i * 0.2 }}
-            className="bg-white rounded-2xl p-6 border border-[#f7931e] shadow-md"
+            className="bg-white rounded-2xl p-6 border border-red-600 shadow-md"
           >
             <div className="w-10 h-10 mx-auto mb-3 bg-[#f5f5f5] rounded-xl flex items-center justify-center">
               {card.icon}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Search } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,14 +25,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-gray-100 py-4 px-6 fixed top-0 left-0 w-full z-50 rounded-b-3xl transition-all duration-300 ${
+      className={`bg-gray-100 py-4 px-4 fixed top-0 left-0 w-full z-50 rounded-b-3xl transition-all duration-300 ${
         scrolled ? 'shadow-md' : ''
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="text-2xl font-bold text-[#232755]">
-          Bos<span className="text-[#f7931e]">dave</span>
-        </div>
+      <div className="container mx-auto flex items-center justify-between px-2 sm:px-4">
+        <Link to="/" className="flex items-center shrink-0">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-10 sm:h-12 w-auto object-contain"
+          />
+        </Link>
 
         <ul className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
@@ -39,8 +44,8 @@ const Navbar = () => {
               <Link
                 to={link.path}
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className={`font-semibold hover:text-blue-600 ${
-                  location.pathname === link.path ? 'text-blue-600' : 'text-black'
+                className={`font-semibold text-2xl hover:text-red-800 ${
+                  location.pathname === link.path ? 'text-red-600' : 'text-black'
                 }`}
               >
                 {link.name}
@@ -51,7 +56,7 @@ const Navbar = () => {
 
         <button
           onClick={() => navigate('/contact')}
-          className="hidden lg:block border border-[#f7931e] text-[#232755] font-semibold px-6 py-2 rounded-full hover:bg-blue-50 transition"
+          className="hidden lg:block border border-red-600 text-[#232755] font-semibold px-6 py-2 rounded-full hover:bg-blue-50 transition"
         >
           Get Quote
         </button>
@@ -75,7 +80,7 @@ const Navbar = () => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                   className={`font-semibold ${
-                    location.pathname === link.path ? 'text-blue-600' : 'text-black'
+                    location.pathname === link.path ? 'text-red-600' : 'text-black'
                   }`}
                 >
                   {link.name}
@@ -91,7 +96,7 @@ const Navbar = () => {
               setMobileMenuOpen(false);
               navigate('/contact');
             }}
-            className="mt-4 w-full border border-blue-600 text-blue-600 font-semibold px-4 py-2 rounded-full hover:bg-blue-50 transition"
+            className="mt-4 w-full border border-red-600 text-black font-semibold px-4 py-2 rounded-full hover:bg-blue-50 transition"
           >
             Get Quote ↗
           </button>
