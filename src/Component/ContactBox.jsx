@@ -8,7 +8,7 @@ const ContactBox = () => {
   const cards = [
     {
       title: "Mail Us 24/7",
-      lines: ["inf@bosdave.com", "support@bosdave.com"],
+      lines: ["info@bosdave.com", "support@bosdave.com"],
       icon: <FaEnvelope className="text-red-600 w-5 h-5" />
     },
     {
